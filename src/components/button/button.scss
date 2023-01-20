@@ -1,0 +1,42 @@
+@use "../../styles" as *;
+.btnstyle {
+  button {
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #232c61;
+    color: white;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    span {
+      position: relative;
+    }
+    &::before {
+      position: absolute;
+      background-color: red;
+      width: 100%;
+      height: 100%;
+      content: "";
+      left: -105%;
+      border-radius: 5px;
+      top: 0;
+      color: black;
+      transition: 0.9s ease-in-out;
+    }
+    &:hover {
+      background-color: black;
+      &::before {
+        left: 0;
+      }
+    }
+  }
+}
+.btnDivContainer {
+  @extend .btnstyle;
+}
+.large {
+  @extend .btnstyle;
+  width: 100%;
+}

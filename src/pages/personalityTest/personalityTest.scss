@@ -1,0 +1,48 @@
+@use "../../styles" as *;
+
+.personalityTest {
+  .personalityTest__bannerDiv {
+    background-image: url("../../assets/images/imgbanner.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #27316d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    h1 {
+      font-size: 50px;
+      color: white;
+      margin-bottom: 30px;
+    }
+  }
+  .personalityTest__textDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    p {
+      line-height: 30px;
+      text-align: center;
+      width: 90%;
+    }
+    .personalityTest__btnDiv {
+      margin: 20px 0;
+      //   width: 30%;
+    }
+  }
+  @include MaxWidth(768px) {
+    .personalityTest__bannerDiv {
+      height: 30vh;
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .personalityTest__textDiv {
+      margin-top: 50px;
+    }
+  }
+}
