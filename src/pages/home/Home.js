@@ -5,7 +5,6 @@ import Button from "../../components/button/Button";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  //   const router = useRouter;
   const history = useNavigate();
   return (
     <div className="home">
