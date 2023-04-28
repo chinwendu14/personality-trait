@@ -21,20 +21,17 @@ const StartPersonalityTest = () => {
   const handleSelect = (itemAnswer, index) => {
     setDisableBtn(true);
     setSelectedAnswerIndex(index);
-    console.log(selectedAnswerIndex);
-    console.log(itemAnswer);
+
     if (itemAnswer === answer) {
       setSelectedAnswer(true);
     } else {
       setSelectedAnswer(false);
     }
-    console.log(answer);
   };
   const handleSubmit = () => {
     setactiveQuest((prev) => prev + 1);
     setSelectedAnswerIndex(null);
     setDisableBtn(false);
-    console.log(selectedAnswer, "anser");
 
     setResult((prev) =>
       selectedAnswer
@@ -54,7 +51,6 @@ const StartPersonalityTest = () => {
       } else {
         history("/extrovert");
       }
-      console.log(result.rightAnswer, result.wrongAnswer);
     }
   };
   return (

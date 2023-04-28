@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import SpinnerLoader from "../components/spinnerLoader/SpinnerLoader";

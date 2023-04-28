@@ -43,7 +43,6 @@
   }
   .home__btnDiv {
     margin-top: 20px;
-    // width: 100%;
   }
   @include MaxWidth(768px) {
     flex-direction: column;
